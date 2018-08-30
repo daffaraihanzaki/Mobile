@@ -1,18 +1,28 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image} from 'react-native';
 
+import Judul from './Components/Judul';
+
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.title}>Nama   :Daffa Raihan Zaki</Text>
+      <View>
+        <Judul/>
+        <Text style={styles.title}>Nama   :Daffa Raihan Zaki Nax RPL</Text>
         <Text style={styles.title}>Kelas  :XI RPL 4</Text>
         <Text style={styles.title}>No     :8</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <Text style={modif.eaa}>Siswa Pero</Text>
         <Image source={require('./fot.png')}/>
       </View>
     );
+  }
+}
+
+const modif={
+  eaa :{
+      color:'white',
+      fontSize:20,
+      backgroundColor:'blue',
   }
 }
 
@@ -25,6 +35,6 @@ const styles = StyleSheet.create({
   },
   title: {
     fontWeight: "100",
-    fontSize: 30,
+    fontSize: 40,
   },
 });
