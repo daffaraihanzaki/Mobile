@@ -1,11 +1,11 @@
 import React from 'react';
 import {Text} from 'react-native';
+import { title } from '../node_modules/change-case';
 
 class Judul extends React.Component{
     render(){
         return(
-            <Text style={salon.judul}
-            >Biodata</Text>
+            <Text style={salon.judul}>{this.props.title}</Text>
         )
     }
 }
